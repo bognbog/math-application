@@ -24,7 +24,7 @@ public class MathApp {
 
         //find display area of circle
         double radius = 7.25;
-        double area = Math.Pi * Math.pow(radius, 2);
+        double area = Math.PI * Math.pow(radius, 2);
 
         System.out.println("Area of the circle is: " + area);
     }
