@@ -4,9 +4,9 @@ public class MathApp {
     public static void main(String[] args) {
 
         // determine who has the highest salary
-        int bobSalary = 55000;
-        int garySalary = 63000;
-        int highestSalary;
+        double bobSalary = 55000;
+        double garySalary = 63000;
+        double highestSalary;
 
         highestSalary = Math.max(bobSalary, garySalary);
         System.out.println("The highest salary is: $" + highestSalary);
@@ -14,9 +14,9 @@ public class MathApp {
 
 
         // determine lowest price of car vs truck
-        int carPrice = 35000;
-        int truckPrice = 42000;
-        int lowestPrice;
+        double carPrice = 35000;
+        double truckPrice = 42000;
+        double lowestPrice;
 
         lowestPrice = Math.min(carPrice, truckPrice);
         System.out.println("The lowest price is: $" + lowestPrice);
@@ -31,7 +31,7 @@ public class MathApp {
 
         // find and display the square root of a variable after it is set to 5.0
         double initialNum = 5.0;
-        double squareRoot = Math.pow(initialNum, 2);
+        double squareRoot = Math.sqrt(initialNum);
 
         System.out.println("The square root is: " + squareRoot);
 
@@ -51,5 +51,23 @@ public class MathApp {
         double absoluteValue = Math.abs(negativeNum);
 
         System.out.println("This is the absolute number: " + absoluteValue);
+
+
+        //display random number
+        double randomNumber = Math.random();
+
+        System.out.println("Random number: " + randomNumber);
+
+
+        //Calculate how many minutes in days
+        int days = 24;
+        int hoursPerDay = 24;
+        int minutesPerHour = 60;
+
+        int totalHours = days * hoursPerDay;
+        int totalMinutes = totalHours * minutesPerHour;
+
+        System.out.println("Total minutes in 24 days: " + totalMinutes);
+
     }
 }
