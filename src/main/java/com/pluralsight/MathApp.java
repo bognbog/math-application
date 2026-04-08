@@ -27,5 +27,6 @@ public class MathApp {
         double area = Math.PI * Math.pow(radius, 2);
 
         System.out.println("Area of the circle is: " + area);
+        
     }
 }
